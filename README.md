@@ -2,6 +2,10 @@
 # AI Desktop
 Simple AI Desktop that uses the OmniParser and Vision-Language Model to interact with the system. It can perform various tasks like opening applications, searching the web, and answering questions.
 
+User Query: `Open Google Chrome and search for google stock price`
+
+https://github.com/user-attachments/assets/c5f6a2ea-ded8-4663-b937-252d0af4c9e2
+
 <!-- omit in toc -->
 ## Table of Contents
 - [Installation](#installation)
