@@ -15,10 +15,16 @@ https://github.com/user-attachments/assets/c5f6a2ea-ded8-4663-b937-252d0af4c9e2
 
 ## Installation
 
-Clone the repository and install the dependencies:
+Clone the repository along with the OmniParser submodule
 
 ```bash
-git clone https://github.com/FareedKhan-dev/ai-desktop
+git clone --recursive https://github.com/FareedKhan-dev/ai-desktop
+```
+
+Or, if already cloned, to `update` OmniParser submodule
+
+```bash
+git submodule update --init --recursive
 ```
 
 To install the dependencies, run the following command:
