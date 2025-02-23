@@ -8,10 +8,32 @@ https://github.com/user-attachments/assets/c5f6a2ea-ded8-4663-b937-252d0af4c9e2
 
 <!-- omit in toc -->
 ## Table of Contents
+- [How it works](#how-it-works)
 - [Installation](#installation)
 - [OmniParser Setup](#omniparser-setup)
 - [Configuration](#configuration)
 - [Running the AI Desktop](#running-the-ai-desktop)
+
+
+## How it works
+
+```mermaid
+graph TD;
+    A[User Prompt: Open Chrome and buy me a milk] -->|User Input| B[VLMAgent];
+
+    B -->|Parse Screen Content| C[Omniparser];
+    C -->|Extracted Info| D[Computer];
+
+    B -->|Analyze Screen, Determine Action| E[LLM OpenAI];
+    E -->|Generate Action e.g., Mouse Move, Type| F[Action Execution];
+
+    F -->|Execute Action on Computer| D;
+    D -->|Get Result/Feedback| B;
+    
+    F -->|Repeat until Task Complete| G[Task Complete];
+```
+
+It takes a user prompt and processes it through a vision-language model (VLMAgent). The agent analyzes the screen, extracts information, and determines the required actions using an AI model. These actions are then executed on the computer, repeating until the task is complete.
 
 ## Installation
 
